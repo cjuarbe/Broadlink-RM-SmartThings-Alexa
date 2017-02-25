@@ -71,7 +71,7 @@ private put(toggle) {
     def toReplace = device.deviceNetworkId
 	def replaced = toReplace.replaceAll(' ', '%20')
 def params = [
-    uri: "http://xxx.xxx.x.x:xxxx/code/$replaced%20$toggle"
+    uri: "http://192.168.1.10:7474//code/$replaced%20$toggle"
 ]
     httpGet(params) 
 }
